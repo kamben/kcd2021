@@ -9,7 +9,7 @@ function Home({lightMode}){
   const paramConfig = {
     particles: {
       number: {
-        value: 160,
+        value: 200,
         density: {
           enable: false
         }
@@ -18,10 +18,10 @@ function Home({lightMode}){
         value: "#ffffff"
       },
       opacity: {
-        value: 0.1
+        value: 0.2
       },
       size: {
-        value: 5,
+        value: 3,
         random: true,
         anim: {
           speed: 4,
@@ -52,7 +52,7 @@ function Home({lightMode}){
         value: "#000000"
       },
       opacity: {
-        value: 0.1
+        value: 0.2
       },
       size: {
         value: 5,
@@ -88,7 +88,7 @@ function Home({lightMode}){
             <div className="col-lg-10 col-12">
               <div className="mi-home-content">
                 <h1>
-                  Hi, I am <span className="color-theme">{information.name}</span>
+                  Hei, jeg heter <span className="color-theme">{information.name}</span>
                 </h1>
                 <p>{information.aboutContent}</p>
                 <Socialicons bordered />
