@@ -3,7 +3,7 @@ import Mock from "../mock";
 const database = {
   information: {
     name: 'Vegard Kamben',
-    aboutContent: "Jeg er en webutvikler, digital etterforsker, og musiker. Jeg lager moderne funksjonelle webløsninger, og jeg gjør konsulentoppdrag innen datasikkerhet og etterforskning. Erfaring med musikkproduksjon kombinert med digital etterforskning gjør at jeg kan levere tjenester innenfor audio forensics.",
+    aboutContent: "Jeg er en webutvikler, digital etterforsker og musiker. Jeg lager moderne funksjonelle webløsninger, og jeg gjør konsulentoppdrag innen datasikkerhet og etterforskning. Erfaring med musikkproduksjon kombinert med digital etterforskning gjør at jeg kan levere tjenester innenfor audio forensics.",
     age: 34,
     phone: '',
     nationality: 'Norsk',
@@ -20,7 +20,7 @@ const database = {
       dribbble: '',
       github: 'https://github.com'
     },
-    brandImage: '/images/brand-image.jpg',
+    brandImage: '/images/profile.jpg',
     aboutImage: '/images/about-image.jpg',
     aboutImageLg: '/images/about-image-lg.jpg',
     cvfile: '/files/empty.pdf'
@@ -29,17 +29,17 @@ const database = {
     {
       title: "Webdesign/utvikling",
       icon: 'code',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Moderne responsivt design, egenutviklet funksjonalitet, enkelt å redigere. #React #HTML5 #Web3.0"
     },
     {
       title: "Dataetterforskning",
       icon: 'lock',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Sikring og analyse av digitale spor fra alle enheter og tjenester. Utfører også rekonstruksjon av data."
     },
     {
       title: "Audio Forensics",
       icon: 'mic',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+      details: "Forbedring og/eller authentisering av alle digitale lydfiler. Sakkyndig og etterprøvbart for bruk i etterforskning eller retten."
     }
   ],
   reviews: [

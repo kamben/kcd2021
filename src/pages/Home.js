@@ -98,7 +98,7 @@ function Home({lightMode}){
                 </h1>
                 <p>{information.aboutContent}</p>
               </div>
-              <div className="mi-service-area mi-section mi-padding-top">
+              <div className="mi-service-area mi-section">
                 <div className="container">
                   <Sectiontitle title="Tjenester" />
                     <div className="mi-service-wrapper">
