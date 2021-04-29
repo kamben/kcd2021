@@ -10,7 +10,7 @@ const database = {
     language: 'Norsk, Engelsk',
     email: 'vegard@kcd.no',
     address: 'Almslivegen 213, Brøttum',
-    freelanceStatus: 'Available',
+    //freelanceStatus: 'Available',
     socialLinks: {
       facebook: 'https://facebook.com',
       twitter: 'https://twitter.com',
@@ -27,18 +27,18 @@ const database = {
   },
   services: [
     {
-      title: "Web Design",
-      icon: 'color-pallet',
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
-    },
-    {
-      title: "Web Development",
+      title: "Webdesign/utvikling",
       icon: 'code',
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
     },
     {
-      title: "Mobile Application",
-      icon: 'mobile',
+      title: "Dataetterforskning",
+      icon: 'lock',
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
+    },
+    {
+      title: "Audio Forensics",
+      icon: 'mic',
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem tenetur ratione quod."
     }
   ],

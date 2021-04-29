@@ -3,9 +3,12 @@ import React, { useEffect, useState } from "react";
 import Particles from "react-particles-js";
 import Layout from "../components/Layout";
 import Socialicons from "../components/Socialicons";
+import Sectiontitle from "../components/Sectiontitle";
+import Service from "../components/Service";
 
 function Home({lightMode}){
   const [information, setInformation] = useState("");
+  const [services, setServices] = useState([]);
   const paramConfig = {
     particles: {
       number: {
@@ -77,7 +80,10 @@ function Home({lightMode}){
     axios.get('/api/information')
     .then( response => {
       setInformation(response.data);
-    })
+    });
+    axios.get("/api/services").then((response) => {
+      setServices(response.data);
+    });
   }, [])
   return (
     <Layout>
@@ -91,7 +97,26 @@ function Home({lightMode}){
                   Hei, jeg heter <span className="color-theme">{information.name}</span>
                 </h1>
                 <p>{information.aboutContent}</p>
-                <Socialicons bordered />
+              </div>
+              <div className="mi-service-area mi-section mi-padding-top">
+                <div className="container">
+                  <Sectiontitle title="Tjenester" />
+                    <div className="mi-service-wrapper">
+                      <div className="row mt-30-reverse">
+                        {services.map((service) => (
+                          <div
+                            className="col-lg-4 col-md-6 col-12 mt-30"
+                            key={service.title}
+                          >
+                            <Service content={service} />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div className="row justify-content-center m-5">
+               <Socialicons bordered />
               </div>
             </div>
           </div>
